@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+}
+
+section.circle {
+    background: #f9423a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section.circle span {
+  display: block;
+    width: 40vmin;
+    height: 40vmin;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
