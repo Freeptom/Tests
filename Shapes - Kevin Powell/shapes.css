@@ -1,26 +1,67 @@
 body {
+  font-family:Roboto;
+  text-align: center;
+  color: #FFFFFB;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 section {
-  height: 100vh;
+  padding: 30vh 0;
 }
 
-section.circle {
-    background: #f9423a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.one {
+  background: #FFC145;
+  position: relative;
 }
-section.circle span {
-  display: block;
-    width: 40vmin;
-    height: 40vmin;
-    background: white;
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
+
+.one__icon {
+  background: rgba(0,0,0,.3);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+
+.one::after,
+.one::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: red;
+  bottom: -1em;
+}
+
+.one::before {
+  background: #FFC145;
+  right: 50%;
+  transform: skew(0, 20deg);
+  z-index: 100;
+}
+.one::after {
+  background: #FFC145;
+  left: 50%;
+  transform: skew(0, -20deg);
+  z-index: 100;
+}
+
+
+.two {
+  background:#FF6B6C;
+  position: relative;
+  /*margin-bottom: -10vw;*/
+  position: relative;
+  z-index: 10;
+}
+
+.three {
+  background: #FFC145;
+  position: relative;
 }
