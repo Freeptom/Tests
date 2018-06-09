@@ -1,14 +1,32 @@
 <html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="sprite_60fps.css"/>
+  <link rel="stylesheet" type="text/css" href="sprite_60fps.css" />
 </head>
+
 <body>
-  <div class="shapeshifter" id = "btn" style="background-image: url(sprite_60fps.svg)"></div>
+  <div class="shapeshifter" id="btn" style="background-image: url(sprite_60fps.svg)"></div>
   <script>
-    document.getElementById('btn').addEventListener('click', function(){
-      this.classList.add('play');
+
+    var play = document.querySelector('play');
+
+    document.getElementById('btn').addEventListener('click', function () {
+      if (!play) {
+        this.classList.remove('rev');
+        this.classList.add('play');
+        
+      } else {
+        this.classList.remove('play');
+        this.classList.add('rev');
+      }
     });
-  
+
+
+
+    // document.getElementById('btn').addEventListener('click', function() {
+    //   this.classList.add('play');
+    // });
   </script>
 </body>
+
 </html>

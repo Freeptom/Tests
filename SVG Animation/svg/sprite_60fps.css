@@ -11,14 +11,24 @@ body {
 }
 .shapeshifter {
   margin: auto;
-  animation-duration: 1000ms;
-  animation-timing-function: steps(60);
-  animation-fill-mode: forwards;
   width: 28px;
   height: 28px;
   background-repeat: no-repeat;
-  cursor: pointer;
+  cursor: pointer; 
 }
 .shapeshifter.play {
-  animation-name: play60;
+  animation-name: play60;  
+  animation-direction: forwards;
+  animation-duration: 1000ms;
+  animation-timing-function: steps(60);
+  animation-fill-mode: forwards;
+  animation-direction: forwards;
 }
+.shapeshifter.rev {
+  animation-name: play60;   
+  animation-duration: 1000ms;
+  animation-timing-function: steps(60);
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
