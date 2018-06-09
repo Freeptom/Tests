@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "layers": {
+    "vectorLayer": {
+      "id": "138",
+      "name": "vector",
+      "type": "vector",
+      "width": 28,
+      "height": 28,
+      "children": [
+        {
+          "id": "466",
+          "name": "path_1",
+          "type": "path",
+          "pathData": "M 5.688 22.215 L 5.666 22.232 L 5.647 22.251 C 5.223 22.675 4.5 22.375 4.5 21.777 L 4.5 8.605 C 4.5 7.777 5.172 7.105 6 7.105 L 22 7.105 C 22.828 7.105 23.5 7.777 23.5 8.605 L 23.5 19.005 C 23.5 19.833 22.828 20.505 22 20.505 L 8.702 20.505 C 8.134 20.505 7.583 20.698 7.14 21.053 L 5.688 22.215 Z",
+          "strokeColor": "#000000",
+          "strokeWidth": 1
+        },
+        {
+          "id": "7053",
+          "name": "group",
+          "type": "group",
+          "children": [
+            {
+              "id": "416",
+              "name": "path_2",
+              "type": "mask",
+              "pathData": "M 5.688 22.215 L 5.666 22.232 L 5.647 22.251 C 5.223 22.675 4.5 22.375 4.5 21.777 L 4.5 8.605 C 4.5 7.777 5.172 7.105 6 7.105 L 22 7.105 C 22.828 7.105 23.5 7.777 23.5 8.605 L 23.5 19.005 C 23.5 19.833 22.828 20.505 22 20.505 L 8.702 20.505 C 8.134 20.505 7.583 20.698 7.14 21.053 L 5.688 22.215 Z"
+            },
+            {
+              "id": "1792",
+              "name": "path_3",
+              "type": "path",
+              "pathData": "M 13.417 23.665 C 9.683 23.064 4.472 23.415 2.333 23.665 L 2.333 25.667 L 24.5 25.667 L 24.5 23.665 C 22.167 23.916 17.15 24.266 13.417 23.665 Z",
+              "fillColor": "#000000",
+              "strokeWidth": 1
+            }
+          ]
+        },
+        {
+          "id": "59642",
+          "name": "path_4",
+          "type": "path",
+          "pathData": "M 2.333 9.333 L 18.667 9.333 M 2.333 9.333 L 18.667 9.333",
+          "fillColor": "#000",
+          "strokeColor": "#ffffff",
+          "strokeWidth": 2.3333333333333335,
+          "trimPathEnd": 0
+        },
+        {
+          "id": "59670",
+          "name": "path_6",
+          "type": "path",
+          "pathData": "M 2.333 12.833 L 16.333 12.833",
+          "fillColor": "#000",
+          "strokeColor": "#ffffff",
+          "strokeWidth": 2.3333333333333335,
+          "trimPathEnd": 0
+        },
+        {
+          "id": "59698",
+          "name": "path_8",
+          "type": "path",
+          "pathData": "M 2.333 16.333 L 14 16.333",
+          "fillColor": "#000",
+          "strokeColor": "#ffffff",
+          "strokeWidth": 2.3333333333333335,
+          "trimPathEnd": 0
+        }
+      ]
+    },
+    "hiddenLayerIds": []
+  },
+  "timeline": {
+    "animation": {
+      "id": "2",
+      "name": "anim",
+      "duration": 1000,
+      "blocks": [
+        {
+          "id": "1804",
+          "layerId": "1792",
+          "propertyName": "pathData",
+          "startTime": 0,
+          "endTime": 1000,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "path",
+          "fromValue": "M 13.417 23.665 C 9.683 23.064 4.472 23.415 2.333 23.665 L 2.333 25.667 L 24.5 25.667 L 24.5 23.665 C 22.167 23.916 17.15 24.266 13.417 23.665 Z",
+          "toValue": "M 13.417 3.647 C 9.683 -2.959 4.472 0.895 2.333 3.647 L 2.333 25.667 L 24.5 25.667 L 24.5 3.647 C 22.167 6.4 17.15 10.253 13.417 3.647 Z"
+        },
+        {
+          "id": "60238",
+          "layerId": "59642",
+          "propertyName": "trimPathEnd",
+          "startTime": 464,
+          "endTime": 1000,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "number",
+          "fromValue": 0,
+          "toValue": 1
+        },
+        {
+          "id": "62363",
+          "layerId": "59670",
+          "propertyName": "trimPathEnd",
+          "startTime": 591,
+          "endTime": 953,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "number",
+          "fromValue": 0,
+          "toValue": 1
+        },
+        {
+          "id": "62897",
+          "layerId": "59698",
+          "propertyName": "trimPathEnd",
+          "startTime": 665,
+          "endTime": 896,
+          "interpolator": "FAST_OUT_SLOW_IN",
+          "type": "number",
+          "fromValue": 0,
+          "toValue": 1
+        }
+      ]
+    }
+  }
+}

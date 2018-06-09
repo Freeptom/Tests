@@ -1,0 +1,68 @@
+body {
+  font-family:Roboto;
+  text-align: center;
+  color: #FFFFFB;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 30vh 0;
+}
+
+.one {
+  background: #FFC145;
+  position: relative;
+}
+
+.one__icon {
+  background: rgba(0,0,0,.3);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+
+.one::after,
+.one::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: red;
+  bottom: -1em;
+}
+
+.one::before {
+  background: #FFC145;
+  right: 50%;
+  transform: skew(0, 20deg);
+  z-index: 100;
+}
+.one::after {
+  background: #FFC145;
+  left: 50%;
+  transform: skew(0, -20deg);
+  z-index: 100;
+}
+
+
+.two {
+  background:#FF6B6C;
+  position: relative;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -10vw;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+}
+
+.three {
+  background: #5933d6;
+  position: relative;
+}
