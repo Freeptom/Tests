@@ -17,17 +17,18 @@ body {
     height: auto;
 
     color: #ffffff;
-    margin: 600px auto 600px auto;
+    margin: 40% auto 600px auto;
     width: 100%;
 }
 
 section {
-    margin: 100px 0 100px 10%;
+    margin: 300px auto 0 auto;
     position: relative;
+    width:80%;
 }
 
 img {
-    width: 75vw;
+    width: 100%;
     height: auto;
 }
 
