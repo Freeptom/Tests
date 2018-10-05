@@ -46,7 +46,7 @@ const ageMap = ages
 //     }
 // });
 
-const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1 : -1));
+// const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1 : -1));
 // console.log(sortedCompanies);
 
 
@@ -62,7 +62,24 @@ const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1 : -1));
 //     return total + age;
 // }, 0);
 
-const ageSum = ages.reduce((total, age) => total + age, 0);
+// const ageSum = ages.reduce((total, age) => total + age, 0);
 
-console.log(ageSum);
+// Get total years for all companies
 
+// const totalYears = companies.reduce(function(total, company){
+//     return total + (company.end - company.start);
+// }, 0);
+
+// const totalYears = companies.reduce((total, company) => total + (company.end - company.start),0);
+
+// console.log(totalYears);
+
+// Combine Methods
+
+const combined = ages
+    .map(age => age * 2)
+    .filter(age => age >= 40)
+    .sort((a, b) => a - b)
+    .reduce((a, b) => a + b, 0);
+
+console.log(combined);
